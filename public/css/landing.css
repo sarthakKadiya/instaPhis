@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @media only screen and (min-width: 375px) {
@@ -22,8 +23,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 1.5em;
-    background: url(/static/other/zane-lee-IHj0xtWtLKE-unsplash.jpg) no-repeat center center /cover;
+    padding: 0.2em;
+    background: url(/static/images/bg_img.jpg) no-repeat center center /cover;
 }
 
 .dataDiv {
@@ -67,9 +68,11 @@ body {
 /* .dataDiv {} */
 
 h1 {
-    color: white;
+    color: #000000;
     align-self: center;
     text-align: center;
+    font-size: 25px;
+    margin-bottom: 12px;
 }
 
 .links {
@@ -87,12 +90,14 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     color: white;
+    margin: 10px 0px;
 }
 
 .orWord {
     /* margin: auto 1em; */
     color: #8e8e8e;
     font-size: 1.8em;
+    margin: 10px 0px;
 }
 
 .line {
@@ -118,7 +123,12 @@ a {
 }
 
 .insta {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
+    background: #f09433;
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
 .fb {
@@ -126,12 +136,38 @@ a {
 }
 
 .successes {
-    color: white;
+    /* color: white;
     text-align: center;
     margin: 2em auto;
     border: #ffffff54 solid 2px;
     width: fit-content;
     padding: 0 0.9em 0 0.5em;
     border-radius: 8px;
-    background-color: #285aeb1a;
+    background-color: #285aeb1a; */
+    width: 100%;
+    box-shadow: 2px 5px 8px black, 16px 11px 8px rgba(0, 0, 0, .25);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-transform: capitalize;
+    width: fit-content;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 2em auto;
+    padding: 0.3em 0.9em 0.3em 0.5em;
+    text-shadow: 0px 0px 20px rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    background-color: white;
+}
+
+#fifty{
+    font-weight: bold;
+    color: #9dff00;
+    font-size: 30px;
+}
+#hun{
+    font-weight: bold;
+    color: #4b01ff;
+    font-size: 30px;
 }
